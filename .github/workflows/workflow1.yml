@@ -4,13 +4,9 @@ on: pull_request
 
 jobs:
   build_flask:
-    runs-on: ubuntu-latest
+    runs-on: docker:dind
     steps:
       - uses: actions/checkout@v3
       - name: install python
         run: |
-          sudo apt-get update
-          apt-get install python3
-          apt-get install pip
-          pip install numpy
-          pip install flask
+          docker image build -tag test_flask .
