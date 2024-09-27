@@ -1,0 +1,14 @@
+name: flask test
+
+on: pull_request
+
+jobs:
+  build_flask:
+    runs-on: ubuntu
+	steps:
+	  - uses: actions/checkout@v3
+	  - name: install python
+	    run: |
+		  apt-get update
+		  apt-get install python3
+		  apt-get install pip
