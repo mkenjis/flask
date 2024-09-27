@@ -13,3 +13,4 @@ jobs:
           apt-get install python3
           apt-get install pip
           pip install numpy
+          pip install flask
