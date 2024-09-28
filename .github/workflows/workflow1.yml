@@ -1,6 +1,6 @@
 name: flask test
 
-on: pull_request
+on: push
 
 jobs:
   build_flask:
