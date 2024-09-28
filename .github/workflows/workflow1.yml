@@ -9,7 +9,7 @@ jobs:
       -
         name: show vars
         env:
-          DCK_USER: 12345
+          DCK_USER: ${{ secrets.DOCKERHUB_TOKEN }}
         run: |
           echo ${DCK_USER}
       -
