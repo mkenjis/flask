@@ -8,4 +8,4 @@ COPY . .
 
 EXPOSE 5000
 
-CMD [ "python", "hello.py" ]
+CMD [ "python", "hello1.py" ]
